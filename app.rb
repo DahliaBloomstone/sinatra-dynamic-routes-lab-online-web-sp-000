@@ -13,6 +13,12 @@ class App < Sinatra::Base
     (@number^2).to_i
   end
 
+  get "/say/:number/:phrase" do
+    @name = params[:name]
+    @name.reverse
+    end
+
+
   get "/multiply/:num1/:num2" do
     @num1 = params[:num1].to_f
     @num2 = params[:num2].to_f
