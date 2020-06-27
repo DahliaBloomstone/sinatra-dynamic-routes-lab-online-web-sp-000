@@ -8,9 +8,8 @@ class App < Sinatra::Base
     @name.reverse
     end
 
-  # Code your final two routes here:
-  get "/goodbye/:name" do
-    @user_name = params[:name]
+  get "/square/:number" do
+    @number = params[:number]
     "Goodbye, #{@user_name}."
   end
 
