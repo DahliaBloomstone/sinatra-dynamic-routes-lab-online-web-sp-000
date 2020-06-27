@@ -19,6 +19,17 @@ class App < Sinatra::Base
     "#{@phrase}.num.times"
     end
 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    @word1 = params[:word1]
+    @word1 = params[:word1]
+    @word1 = params[:word1]
+    @word1 = params[:word1]
+    @word1 = params[:word1]
+
+
+  end
+
+
 
   get "/multiply/:num1/:num2" do
     @num1 = params[:num1].to_f
